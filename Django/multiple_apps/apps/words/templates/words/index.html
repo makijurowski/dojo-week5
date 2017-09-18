@@ -1,0 +1,16 @@
+{% extends 'words_base.html' %}
+
+{% block content %}
+<div class="col-sm-1"></div>
+<div class="col-sm-10">
+    <div class="word-generator" id="word-generate-box">
+        <h1 class="display-1">Random Word Attempt #{{ request.session.attempt_count }}:</h1> 
+        <h2 class="display-2 lead">{{ request.session.new_word }}</h2>
+        <div id="button-box">
+            <a class="btn btn-success" id="word-button" href="generate">Generate a Word</a>
+            <a class="btn btn-danger" id="clear-button" href="reset">Clear Attempts</a>
+        </div>
+    </div>
+</div>
+<div class="col-sm-1"></div>
+{% endblock %}

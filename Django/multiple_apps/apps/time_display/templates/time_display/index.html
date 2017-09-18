@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-sm-1"></div>
+<div class="col-sm-10" id="display-time">
+    <span class="lead">The current time and date:</span>
+    <h1 class="display-2">{{ date }}</h2>
+    <h2 class="display-3">{{ time }}</h2>
+</div>
+<div class="col-sm-1"></div>
+{% endblock %}

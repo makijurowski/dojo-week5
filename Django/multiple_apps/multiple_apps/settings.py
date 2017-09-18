@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'apps.blogs',
     'apps.users',
     'apps.surveys',
+    'apps.time_display',
+    'apps.words',
 ]
 
 MIDDLEWARE = [

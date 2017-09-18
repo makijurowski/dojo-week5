@@ -1,0 +1,14 @@
+
+#word-generate-box {
+    position: relative;
+    top: 20vh;
+    text-align: center;
+}
+
+#button-box {
+    margin-top: 50px;
+}
+
+#button-box > a {
+    margin-right: 20px;
+}

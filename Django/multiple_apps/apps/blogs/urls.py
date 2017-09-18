@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^index.html$', views.index),
     url(r'^new$', views.new, name='new'),
     url(r'^create$', views.create, name='create'),
     url(r'^(?P<num>[0-9]+)$', views.show, name='show'),

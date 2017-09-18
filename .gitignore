@@ -86,3 +86,4 @@ junk*
 Activate DjangoEnv
 FlaskandMySQL/the_wall/flask_wall.png
 FlaskandMySQL/the_wall/data/*
+*.jpg
