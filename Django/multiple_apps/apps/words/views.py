@@ -20,7 +20,7 @@ def reset(request):
         return redirect('index')
 
 def generate(request):
-    if request.method =="GET":
+    if request.method == "GET":
         request.session['attempt_count'] += 1
         request.session['new_word'] = random_generator()
     return redirect('index')

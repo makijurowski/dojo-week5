@@ -1,0 +1,48 @@
+{% extends 'survey_form/base.html' %}
+
+
+{% block content %}
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+    <div class="survey-form panel panel-default" id="survey-form">
+        <div class="panel-heading lead">
+            {{ text }}
+        </div>
+        <form class="survey-form-box panel-body" action="process" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" class="form-control" id="fname" placeholder="Enter your first name.">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" class="form-control" id="lname" placeholder="Enter your last name.">
+            </div>
+            <div class="form-group">
+                <label for="dojo_location">Coding Dojo Location</label>
+                <select class="form-control" name="dojo_location" id="dojo_location">
+                    <option> </option>
+                    <option>Seattle, WA</option>
+                    <option>San Jose, CA</option>
+                    <option>Houston, TX</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="language_options">Favorite Language</label>
+                <select class="form-control" name="language_options" id="language_options">
+                    <option> </option>
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>HTML</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="opt_comment">Anything else?</label>
+                <textarea class="form-control" name="opt_comment" id="opt-comment" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div class="col-sm-2"></div>
+{% endblock %}
