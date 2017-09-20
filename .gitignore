@@ -99,3 +99,11 @@ Django/forms_project/apps/dojo_ninjas/migrations/0004_auto_20170919_1851.py
 Django/forms_project/apps/dojo_ninjas/migrations/0005_ninja_dojo_id.py
 Django/forms_project/apps/dojo_ninjas/migrations/0006_dojo_desc.py
 Django/forms_project/apps/dojo_ninjas/templates/dojo_ninjas/index.html
+Django/forms_project/apps/users/tests.py
+Django/forms_project/apps/users/__init__.py
+Django/forms_project/apps/users/admin.py
+Django/forms_project/apps/users/apps.py
+Django/forms_project/apps/users/urls.py
+Django/forms_project/apps/users/migrations/__init__.py
+Django/forms_project/apps/users/migrations/0001_initial.py
+Django/forms_project/apps/users/templates/users/index.html
