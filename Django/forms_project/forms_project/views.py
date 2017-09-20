@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 from django.shortcuts import render, HttpResponse, redirect
 
 
-# Create your views here.
 def index(request):
     response = "Testing Forms_project index"
     return HttpResponse(response)

@@ -10,7 +10,6 @@ def index(request):
         'last_user': User.objects.order_by('-created_at').reverse()[:1],
         'first_user': User.objects.first(),
         'all_users_first_name_desc': User.objects.order_by('first_name'),
-        # following commands update field
         'get_record_3': User.objects.get(id=3),
         'update_record_3': "get_record_3.last_name='Kinne'.save()",
         'save_record_3': get_record_3.save(),

@@ -6,19 +6,18 @@ from .models import Form
 from .forms import PostSurvey
 
 
-# Create your views here.
 def index(request):
     response = {
-        'text': 'This is my survey_form apps response.'
+        'text': 'This is my survey_form apps default response.'
     }
     return render(request, 'survey_form/index.html', response)
+
 
 def process(request):
     try:
         request.session['attempts']
     except KeyError:
         request.session['attempts'] = 0
-    print "This worked!"
     request.session['fname'] = request.POST.get('fname')
     request.session['lname'] = request.POST.get('lname')
     request.session['dojo_location'] = request.POST.get('dojo_location')
