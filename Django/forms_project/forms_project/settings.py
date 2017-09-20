@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.session_words',
     'apps.users',
     'apps.dojo_ninjas',
+    'apps.book_authors',
 ]
 
 MIDDLEWARE = [

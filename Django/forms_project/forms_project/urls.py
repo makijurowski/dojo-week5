@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^words/', include('apps.session_words.urls'), name='words'),
     url(r'^users/', include('apps.users.urls'), name='users'),
     url(r'^dojo_ninjas/', include('apps.dojo_ninjas.urls'), name='dojo_ninjas'),
+    url(r'^books/', include('apps.book_authors.urls'), name='books'),
 ]
