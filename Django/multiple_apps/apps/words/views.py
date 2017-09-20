@@ -8,7 +8,6 @@ import string
 def random_generator(size=10, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
 
-# Create your views here.
 def index(request):
     if 'attempt_count' not in request.session:
         request.session['attempt_count'] = 0

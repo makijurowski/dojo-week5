@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.survey_form',
     'apps.session_words',
+    'apps.users',
+    'apps.dojo_ninjas',
 ]
 
 MIDDLEWARE = [
