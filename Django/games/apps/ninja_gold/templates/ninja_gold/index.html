@@ -1,0 +1,44 @@
+{% extends 'ninja_gold/base.html' %}
+
+{% block content %}
+<div class="margin-top">
+    <div class="col-sm-4 gold_count panel panel-default">
+        <h4 class="panel-body">Gold Count: 40 </h4>
+    </div>
+</div>
+<div class="col-sm-12">
+    <form id="header" action="process_money" method="post" class="row">
+        <div class="col-sm-3 panel panel-default">
+            <div class="location panel-body">
+                <h4 class="display-4">Farm</h4>
+                <input class="btn btn-default" name="farm" type="submit" value="Find Gold!">
+            </div>
+        </div>
+        <div class="col-sm-3 panel panel-default">
+            <div class="location panel-body">
+                <h4 class="display-4">Cave</h4>
+                <input class="btn btn-default" name="cave" type="submit" value="Find Gold!">
+            </div>
+        </div>
+        <div class="col-sm-3 panel panel-default">
+            <div class="location panel-body">
+                <h4 class="display-4">House</h4>
+                <input class="btn btn-default" name="house" type="submit" value="Find Gold!">
+            </div>
+        </div>
+        <div class="col-sm-3 panel panel-default">
+            <div class="location panel-body">
+                <h4 class="display-4">Casino</h4>
+                <input class="btn btn-default" name="casino" type="submit" value="Find Gold!">
+            </div>
+        </div>
+    </form>
+    <div id="footer" class="row">
+        <div class="log panel panel-default">
+            <h4 class="display-4 panel-heading">Game Log</h4>
+            <textarea class="panel-body form-control" rows="10"></textarea>
+        </div>
+    </div>
+</div>
+<div class="col-sm-0"></div>
+{% endblock %}
