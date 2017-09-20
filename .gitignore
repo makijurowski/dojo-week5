@@ -112,3 +112,8 @@ Django/forms_project/apps/book_authors/__init__.py
 Django/forms_project/apps/book_authors/admin.py
 Django/forms_project/apps/book_authors/apps.py
 Django/forms_project/apps/book_authors/tests.py
+Django/forms_project/apps/book_authors/migrations/__init__.py
+Django/forms_project/apps/book_authors/migrations/0001_initial.py
+Django/forms_project/apps/book_authors/migrations/__init__.py
+Django/forms_project/apps/book_authors/migrations/0001_initial.py
+Django/forms_project/apps/dojo_ninjas/migrations/0007_auto_20170919_1945.py
