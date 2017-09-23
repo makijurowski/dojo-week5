@@ -88,13 +88,4 @@ FlaskandMySQL/the_wall/flask_wall.png
 FlaskandMySQL/the_wall/data/*
 *.jpg
 *migrations*
-Django/forms_project/apps/users/tests.py
-Django/forms_project/apps/users/__init__.py
-Django/forms_project/apps/users/admin.py
-Django/forms_project/apps/users/apps.py
-Django/forms_project/apps/users/urls.py
-Django/forms_project/apps/users/templates/users/index.html
-Django/forms_project/apps/book_authors/__init__.py
-Django/forms_project/apps/book_authors/admin.py
-Django/forms_project/apps/book_authors/apps.py
-Django/forms_project/apps/book_authors/tests.py
+Django/templates/old_ninja_gold.html
