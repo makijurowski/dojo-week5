@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 from django.shortcuts import render, HttpResponse, redirect
 
 
-# Create your views here.
 def index(request):
     context = {
         'email': 'makiroggers@gmail.com',
@@ -38,7 +37,7 @@ def show(request, num):
 
 
 def edit(request, num):
-    response = "EDIT ITplaceholder to later display all the list of blogs"
+    response = "EDIT IT placeholder to later display all the list of blogs"
     return HttpResponse(response)
 
 

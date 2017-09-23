@@ -9,7 +9,7 @@ class Book(models.Model):
     desc = models.TextField(max_length=1000)
     author_id = models.ManyToManyField('Author', through='BookAuthor', blank=True)
     created_at = models.DateTimeField(default=timezone.now)
-    updated_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now_add=True)
 
 
 class Author(models.Model):
@@ -19,7 +19,7 @@ class Author(models.Model):
     book_id = models.ManyToManyField('Book', through='BookAuthor', blank=True)
     notes = models.TextField(max_length=1000, null=True)
     created_at = models.DateTimeField(default=timezone.now)
-    updated_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now_add=True)
 
 
 class BookAuthor(models.Model):

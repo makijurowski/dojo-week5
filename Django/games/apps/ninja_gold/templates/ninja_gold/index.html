@@ -1,42 +1,49 @@
-{% extends 'ninja_gold/base.html' %}
-
+{% extends 'base.html' %}
 {% block content %}
 <div class="margin-top">
-    <div class="col-sm-4 gold_count panel panel-default">
-        <h4 class="panel-body">Gold Count: 40 </h4>
+    <div class="col-sm-3 panel panel-default gold_count">
+        <h4>Gold Count: 40 </h4>
     </div>
 </div>
 <div class="col-sm-12">
-    <form id="header" action="process_money" method="post" class="row">
-        <div class="col-sm-3 panel panel-default">
-            <div class="location panel-body">
-                <h4 class="display-4">Farm</h4>
-                <input class="btn btn-default" name="farm" type="submit" value="Find Gold!">
+    <form id="header" action="process_money" method="post">
+        <div class="row location-row">
+            <div class="col-sm-5 panel panel-default location" id="farm">
+                <div class="panel-body">
+                    <h3 class="display-3">Farm</h3>
+                    <h4 class"display-4">Earn 10-20 Gold</h4>
+                    <input class="btn btn-default" name="farm" type="submit" value="Find Gold!">
+                </div>
+            </div>
+            <div class="col-sm-5 panel panel-default location" id="cave">
+                <div class="panel-body">
+                    <h3 class="display-3">Cave</h3>
+                    <h4 class "display-4">Earn 5-10 Gold</h4>
+                    <input class="btn btn-default" name="cave" type="submit" value="Find Gold!">
+                </div>
             </div>
         </div>
-        <div class="col-sm-3 panel panel-default">
-            <div class="location panel-body">
-                <h4 class="display-4">Cave</h4>
-                <input class="btn btn-default" name="cave" type="submit" value="Find Gold!">
+        <div class="row location-row">
+            <div class="col-sm-5 panel panel-default location" id="house">
+                <div class="panel-body">
+                    <h3 class="display-3">House</h3>
+                    <h4 class "display-4">Earn 2-5 Gold</h4>
+                    <input class="btn btn-default" name="house" type="submit" value="Find Gold!">
+                </div>
             </div>
-        </div>
-        <div class="col-sm-3 panel panel-default">
-            <div class="location panel-body">
-                <h4 class="display-4">House</h4>
-                <input class="btn btn-default" name="house" type="submit" value="Find Gold!">
-            </div>
-        </div>
-        <div class="col-sm-3 panel panel-default">
-            <div class="location panel-body">
-                <h4 class="display-4">Casino</h4>
-                <input class="btn btn-default" name="casino" type="submit" value="Find Gold!">
+            <div class="col-sm-5 panel panel-default location" id="casino">
+                <div class="panel-body">
+                    <h3 class="display-3">Casino</h3>
+                    <h4 class "display-4">Earn/Lose 0-50 Gold</h4>
+                    <input class="btn btn-default" name="casino" type="submit" value="Find Gold!">
+                </div>
             </div>
         </div>
     </form>
     <div id="footer" class="row">
-        <div class="log panel panel-default">
-            <h4 class="display-4 panel-heading">Game Log</h4>
-            <textarea class="panel-body form-control" rows="10"></textarea>
+        <div class="panel panel-default log" id="game_log">
+            <div class="panel panel-heading log-heading"><h4 class="display-4 log-heading">Game Log</h4></div>
+            <textarea class="panel-body form-control empty-log" rows="10"></textarea>
         </div>
     </div>
 </div>

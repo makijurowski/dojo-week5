@@ -1,7 +1,78 @@
-.margin-top {
-    margin-top: 100px;
+* {
+    box-sizing: border-box !important;
 }
 
 body {
-    background-color: #cccccc;
+    background-color: #F0C44B;
+    box-sizing: border-box !important;
+}
+.gold_count {
+    text-align: center;
+    position: relative;
+    left: 83%;
+    width: 18rem;
+    margin-bottom: 30px;
+}
+.margin-top {
+    margin-top: 75px;
+}
+
+.location-row {
+    text-align: center;
+    margin: 0 auto 0 10%;
+}
+
+.location {
+    padding-top: 7px;
+    margin-right: 5rem;
+    height: 20rem;
+    color: white;
+    text-shadow: 0 0 5px #000000;
+}
+
+#farm {
+    background: url("/static/images/ninja_gold/farm.png");
+    background-size: auto 120%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#house {
+    background: url("/static/images/ninja_gold/house.png");
+    background-size: auto 120%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#cave {
+    background: url("/static/images/ninja_gold/cave.png");
+    background-size: auto 120%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#casino {
+    background: url("/static/images/ninja_gold/casino.png");
+    background-size: auto 120%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#game_log {
+    margin-top: 30px;
+    padding: 0;
+    vertical-align: top;
+    background-color: #222222;
+}
+
+.log-heading {
+    background-color: #222222 !important;
+    border: 0;
+    height: 4rem;
+    color: #cccccc;
+}
+
+.empty-log {
+    background-color: #e6e6e6;
+    border: 0;
 }

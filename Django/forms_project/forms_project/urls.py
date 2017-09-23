@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^users/', include('apps.users.urls'), name='users'),
     url(r'^dojo_ninjas/', include('apps.dojo_ninjas.urls'), name='dojo_ninjas'),
     url(r'^books/', include('apps.book_authors.urls'), name='books'),
+    url(r'^rest/', include('apps.restful_users.urls'), name='rest'),
 ]
