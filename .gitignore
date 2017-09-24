@@ -89,3 +89,5 @@ FlaskandMySQL/the_wall/data/*
 *.jpg
 *migrations*
 Django/templates/old_ninja_gold.html
+Django/login_registration/login_registration/templates/base-3.html
+Django/login_registration/apps/my_login/views_old.py

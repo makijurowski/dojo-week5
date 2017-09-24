@@ -15,19 +15,19 @@ Including another URLconf
 """
 # from django.contrib.auth import views as auth_views
 from django.conf.urls import include, url
-from django.conf.urls.static import static
+# from django.conf.urls.static import static
 from django.contrib import admin
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+# from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import views
 
-admin.autodiscover()
+# admin.autodiscover()
 
 urlpatterns = [
-    url('^', include('django.contrib.auth.urls')),
+    # url('^', include('django.contrib.auth.urls')),
     # url(r'^/', include('apps.my_login.urls'), name='my_login1'),
     url(r'^admin/', admin.site.urls),
     # url(r'^login/$', auth_views.login),
-    url(r'^my_login/', include('apps.my_login.urls'), name='my_login2'),
+    url(r'^my_login/', include('apps.my_login.urls'), name='my_login'),
 ]
 
-urlpatterns += staticfiles_urlpatterns()
+# urlpatterns += staticfiles_urlpatterns()

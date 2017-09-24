@@ -1,3 +1,4 @@
+''' 
 from django.contrib.auth import logout
 from django.shortcuts import HttpResponse, redirect, render
 
@@ -10,4 +11,5 @@ def logout_view(request):
     logout(request)
 
 def base(request):
-    response = 'Placeholder to check project rendering.'
+    response = 'Placeholder to check project rendering.' 
+'''

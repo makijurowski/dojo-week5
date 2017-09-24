@@ -1,22 +1,29 @@
-{% extends '/base.html' %}
-
+{% extends '../templates/base.html' %} 
 {% load static %}
 
-{% blocktitle %} My_Login Form {% endblock %}
 
-{% block css %}{{block.super}}
-    <!-- CSS goes here -->
+{% block title %}
+<title>Registration</title>
 {% endblock %}
+
+{% block css %}
+{{block.super}}
+    <link rel="stylesheet" href='{% static "css/my_login/styles.css" %}' type="text/css" />
+{% endblock %} 
 
 {% block content %}
+<div id="main">
     <form method="POST">
-    <!-- <form action="{{ register }}" method="POST"> -->
-        {% csrf_token %}
-            {{ form }}
+        <!-- <form action="{{ register }}" method="POST"> -->
+        {% csrf_token %} 
+        {{ new_user_registration }}
         <input type="submit" value="submit">
     </form>
-{% endblock %}
+</div>
+{% endblock %} 
 
 {% block footer %}
+<div id="footer">
     <p>Thanks for visiting!</p>
+</div>
 {% endblock %}
