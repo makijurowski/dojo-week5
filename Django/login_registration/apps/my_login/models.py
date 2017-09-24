@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-# from django.contrib.auth.models import User
-# from django.contrib.auth.hashers import make_password
-# from django.dispatch import receiver
 from django.db import models
 from django.utils import timezone
 import re

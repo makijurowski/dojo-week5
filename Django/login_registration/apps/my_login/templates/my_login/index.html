@@ -14,7 +14,6 @@
 {% block content %}
 <div id="main">
     <form method="POST">
-        <!-- <form action="{{ register }}" method="POST"> -->
         {% csrf_token %} 
         {{ new_user_registration }}
         <input type="submit" value="submit">

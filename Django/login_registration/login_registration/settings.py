@@ -131,4 +131,3 @@ STATICFILES_DIR = [
 LOGIN_REDIRECT_URL = 'my_login/login/'
 
 print "base staticfiles_dir", STATICFILES_DIR
-# FILES_DIR = os.path.abspath(os.path.join(BASE_DIR, '../templates/'))
